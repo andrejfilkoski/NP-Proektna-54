@@ -55,3 +55,11 @@ for(const auto* c: vcmk)
 
 cout <<c->grad <<" "<< c->novi << " " << c->ozdraveni<< '\n';
 
+//vector vo nadvoreshen fajl
+ofstream outFile ("INKI883AndrejfilkoskiCovidMK.txt");
+for (const auto& e: vcmk) outFile<<e<<endl;
+
+for(auto* c: vcmk)
+delete c;
+
+}
